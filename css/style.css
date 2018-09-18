@@ -1,0 +1,224 @@
+/*** 
+	 Reset Css
+			   ***/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* Removing blue border */
+*:focus {
+    outline: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Reset Css end */
+
+/***
+	Main style
+			  ***/
+* {	padding:0px; margin:0px; 
+	-moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	box-sizing: border-box; }
+
+html {max-width: 100%; max-height: 100%; overflow-x: hidden;}
+body {width: 100%; height: 100% !important;}
+
+section {width: 100vw !important; position: relative;}
+
+p {font-style: normal; font-variant: normal; font-weight: 500;}
+
+textarea:focus, input:focus{
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+/* For common usage */
+::-webkit-scrollbar { 
+    display: none !important; 
+}
+.fullHeight {height: 100% !important;}
+.fLeft 		{float: left !important;}
+.fCenter 	{float: center !important;}
+.fRight 	{float: right !important;}
+.vertCenter {margin: auto; height: 80px !important; position: absolute;
+  			top: 0; left: 0; bottom: 0; right: 0; vertical-align: middle !important;}
+.showMe     {border:1px solid red;}
+/* For common usage */
+
+/* Main Style end */
+
+
+
+/***** 
+	  Bootstrap 4 styles
+	  					*****/
+.container {
+    display:table;
+    width: 100%;
+    height:100%;
+    box-sizing: border-box;
+}
+
+.row {
+	width: 100%;
+    height: 100%;
+    display: block;
+}
+.row .no-float {
+  display: table-cell;
+  float: none;
+}
+
+
+/********************************************menu***************************************/
+#menu				{width:100%; height:70px; position:fixed; z-index:10; display:block;}
+
+#menuContent		{width:100%; height:70px; position:relative; background-color:#1f9ace;}	
+
+nav.menuLogo		{width:100%; height:auto; position:absolute; 
+					 margin-left:auto; margin-right:auto; left:0; right:0; z-index:10; 
+					 transition: all .3s ease-in-out;}
+
+nav.menuLogo img	{width:100%; height:auto;}
+
+nav.menuLogo.scrolled		{width:12%; height:auto; position:absolute; 
+					 		 margin-left:auto; margin-right:auto; left:0; right:0; z-index:10;}
+nav.menuLogoscrolled img	{width:100%; height:auto;}	
+
+#menuList 			{width:90%; position:absolute; z-index:11; margin-top:20px; margin-left:45px;}
+
+#menuList ul li		{text-align:center; float:left; padding:5px; padding-left:3vw;}
+
+#menuList ul li	a	{text-decoration: none; color: #fff; font-family: 'Montserrat', sans-serif; 
+					 font-weight: 400; font-size: 15px;}			 
+/********************************************menu***************************************/,
+
+
+
+.smoothScroll {height: 100vh !important;}  /* Sections has this class */
+/*****/ /* Developer Edition */ /*****/
+#developer {width: 100vw; height: 100vh !important; position: relative;
+			 background-image:url(../img/developer.png);
+			 background-attachment:relative;
+			 background-size: cover; 
+			 background-repeat:no-repeat; 
+			 background-position:center;}
+
+
+/*****/ /* Firefox */ /*****/
+#firefox {width: 100vw; height: 100vh !important; position: relative;
+			 background-image:url(../img/firefox.png);
+			 background-attachment:relative;
+			 background-size: cover; 
+			 background-repeat:no-repeat; 
+			 background-position:center;}
+
+
+
+
+/*****/ /* Opera */ /*****/
+#opera {width: 100vw; height: 100vh !important; position: relative;
+			 background-image:url(../img/opera.png);
+			 background-attachment:relative;
+			 background-size: cover; 
+			 background-repeat:no-repeat; 
+			 background-position:center;}
+
+
+
+
+/*****/ /* Vivaldi */ /*****/
+#vivaldi {width: 100vw; height: 100vh !important; position: relative;
+			 background-image:url(../img/vivaldi.png);
+			 background-attachment:relative;
+			 background-size: cover; 
+			 background-repeat:no-repeat; 
+			 background-position:center;}
+
+
+
+
+/*****/ /* Safari */ /*****/
+#safari {width: 100vw; height: 100vh !important; position: relative;
+			 background-image:url(../img/safari.png);
+			 background-attachment:relative;
+			 background-size: cover; 
+			 background-repeat:no-repeat; 
+			 background-position:center;}
+
+
+
+
+/*****/ /* Chrome */ /*****/
+#chrome {width: 100vw; height: 100vh !important; position: relative;
+			 background-image:url(../img/chrome.png); 
+			 background-attachment:relative;
+			 background-size: cover; 
+			 background-repeat:no-repeat; 
+			 background-position:center;}
+
+
+/*****/ /* Egde */ /*****/
+#edge {width: 100vw; height: 100vh !important; position: relative;
+			 background-image:url(../img/edge.png); 
+			 background-attachment:relative;
+			 background-size: cover; 
+			 background-repeat:no-repeat; 
+			 background-position:center;}
+
+
+/*****/ /* IE */ /*****/
+#ie {width: 100vw; height: 100vh !important; position: relative;
+			 background-image:url(../img/ie.png); 
+			 background-attachment:relative;
+			 background-size: cover; 
+			 background-repeat:no-repeat; 
+			 background-position:center;}
+
+
+
+.row {width: 100% !important;}
+
+/******************************************************************************************/
+/*******************************      RESPONSIVE      *************************************/
+/******************************************************************************************/
